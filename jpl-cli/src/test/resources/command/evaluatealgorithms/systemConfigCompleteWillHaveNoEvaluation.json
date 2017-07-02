@@ -1,0 +1,21 @@
+{
+	"input_files": [{
+		"description": "",
+		"file_path": "../jpl-api/src/test/resources/dataset/instanceranking/instancerankingtest.gprf",
+		"selected_context_features": null,
+		"selected_item_features": null
+	}],
+	"output_file": "output.txt",
+	"learning_problem": "rank_aggregation",
+	"algorithms": [{
+		"name": "pairwise_ranking",
+		"parameters": {
+
+		}
+	}],
+	"evaluation": {
+		"evaluation_name": "percentage_split",
+		"threshold": "0.5",
+		"evaluation_metrics": []
+	}
+}

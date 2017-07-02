@@ -1,0 +1,64 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-0-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-1-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-2-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-3-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "olc_output_cross_validation.txt",
+	"learning_problem": "ordinal_classification",
+	"algorithms": [
+		{
+			"name": "simple_ordinal_classification",
+			"parameters": {
+				"base_learner" : {
+					"name" : "logistic_regression",
+					"parameters" : {
+						"learning_rate" :  0.2
+					}
+				}
+			}
+		},{
+			"name": "ordinal_classification_reduction_framework",
+			"parameters": {
+				"cost_matrix_type_identifier" : "absolute_cost_matrix"
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "cross_validation",
+		"folds": 10,
+		"evaluation_metrics": [
+			{
+				"name": "mean_squared_error",
+				"parameters": {
+					
+				}
+			},{
+				"name": "mean_absolute_error",
+				"parameters": {
+					
+				}
+			}
+			
+		]
+	},
+	"seed" : 1234
+}

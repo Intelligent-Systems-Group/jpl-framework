@@ -1,0 +1,24 @@
+{
+	"name": "Expected Rank Regression",
+	"title": "A survey and empirical comparison of object ranking methods",
+	"author": "Kamishima, Toshihiro and Kazawa, Hideto and Akaho, Shotaro",
+	"year": "2010",
+	"chapter": "Preference learning",
+	"pages": "181--201",
+	"publisher": "Springer",
+	"parameter": [
+		{
+			"name": "base_learner",
+			"range": "Regression Model",
+			"description": "A json object defining the base learner to use. The definition consists of an identifier, identifying the according base learner and a json object defining the parameters of the base learner, if there are any."
+		}
+	],
+	"default_parameter_values": {
+		"base_learner": {
+			"name": "linear_regression",
+			"parameters": {
+				
+			}
+		}
+	}
+}

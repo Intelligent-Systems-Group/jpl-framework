@@ -1,0 +1,27 @@
+{
+  "name": "Plackett Luce Model Fitting Algorithm",
+  
+  "title" : "MM algorithms for generalized Bradley-Terry models",
+  "author" : "Hunter, David R",
+  "chapter" : "Annals of Statistics",
+  "pages" : "384-406",
+  "year" : "2004",
+  "publisher" : "JSTOR",
+  
+  "parameter" : [
+	{
+      	"name" : "iterations_sample_set_size_multiplier",
+      	"range": "Integer>0",
+      	"description": "This parameter is used as a stopping criterion. The sample set size multiplied with this parameter is used as an upper bound on the amount of iterations of this algorithm."
+    }, 
+    {
+      	"name" : "minimum_required_change_on_update",
+      	"range": "Double>=0",
+      	"description": "This parameter is used as a stopping criterion. Each iteration the sum of the changes of the components of the old and the new parameter vector is computed. If this sum falls below the value defined by this criterion, the algorithm will stop."
+    }, 
+  ],
+  "default_parameter_values" : {
+	"iterations_sample_set_size_multiplier" : 1000,
+	"minimum_required_change_on_update" : 0.000001
+  }
+}

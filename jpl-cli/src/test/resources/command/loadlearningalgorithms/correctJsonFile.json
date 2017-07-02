@@ -1,0 +1,13 @@
+[
+	{
+		"name": "perceptron_rank", 
+		"parameters": {
+			"a": 1
+		}
+	},{
+		"name": "perceptron_rank", 
+		"parameters": {
+			"a": 3
+		}
+	}
+]

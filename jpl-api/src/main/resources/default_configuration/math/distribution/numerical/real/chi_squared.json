@@ -1,0 +1,13 @@
+{
+  "name": "Chi^2 Distribution",
+  "parameter" : [
+    {
+      "name" : "degrees_of_freedom",
+      "range": "Integer>0",
+      "description": "The amount of degrees of freedom."
+    }
+  ],
+  "default_parameter_values" : {
+	"degrees_of_freedom" : 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+	"name": "LIB SVM Wrapper",
+	"title": "{LIBSVM}: A library for support vector machines",
+	"author": "Chang, Chih-Chung and Lin, Chih-Jen",
+	"year": "2011",
+	"chapter": "ACM Transactions on Intelligent Systems and Technology",
+	"pages": "27:1--27:27",
+	"publisher": "ACM",
+	"parameter": [
+		{
+			"name": "svm_type",
+			"range": "{0, 1}",
+			"description": "The type of SVM to be used, set type of SVM (default 0) 0-C-SVC, 1-nu-SVC"
+		},
+		{
+			"name": "kernel_type",
+			"range": "{0, 1, 2, 3}",
+			"description": "The type of kernel to be used by SVM, Linear 0, Poly-Kernel 1, RBF 2, SIGMOID 3. LINEAR = u'*v, POLY=(gamma*u'*v + coef0)^degree, RBF= exp(-gamma*|u-v|^2), SIGMOID=tanh(gamma*u'*v + coef0)"
+		},
+		{
+			"name": "cache_size",
+			"range": "Integer>0",
+			"description": "Specify the size of the kernel cache (in MB)."
+		},
+		{
+			"name": "c_margin",
+			"range": "Double>0",
+			"description": "The C parameter tells the SVM optimization how much you want to avoid misclassifying each training example. For large values of C, the optimization will choose a smaller-margin hyperplane if that hyperplane does a better job of getting all the training points classified correctly. Conversely, a very small value of C will cause the optimizer to look for a larger-margin separating hyperplane, even if that hyperplane misclassifies more points. For very tiny values of C, you should get misclassified examples, often even if your training data is linearly separable."
+		},
+		{
+			"name": "stopping_criteria",
+			"range": "Double>0",
+			"description": "Tolerance for stopping criterion."
+		},
+		{
+			"name": "probability",
+			"range": "{0, 1}",
+			"description": "Whether to train an SVC or SVR model for probability estimates, 0 or 1 (default 0). 1 mean use it and 0 means not to use it."
+		},
+		{
+			"name": "gamma",
+			"range": "Double>0",
+			"description": "Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. If gamma is ‘-1’ then 1/n_features will be used instead."
+		},
+		{
+			"name": "coeff",
+			"range": "Double",
+			"description": "Kernel coefficient for poly’ and ‘sigmoid’. Set coef0 in kernel function (default 0)"
+		},
+		{
+			"name": "degree",
+			"range": "Integer>1",
+			"description": "Degree of the polynomial kernel function (‘poly’). Ignored by all other kernels."
+		},
+		{
+			"name": "shrinking",
+			"range": "{0, 1}",
+			"description": "Whether to use the shrinking heuristics, 0 or 1 (default 1). 1 mean use it and 0 means not to use it."
+		},
+		{
+			"name": "m_nu",
+			"range": "Double",
+			"description": "Set the parameter nu of nu-SVC (default 0.5)"
+		},
+		{
+			"name": "weight",
+			"range": "Double Array of size 2, Each value Double>0",
+			"description": "Weights defining the the weights for (1,-1) label. Example is (15,1), set the parameter C of class i to weight*C in C-SVC (C*15) for label 1 while its C*1 for label -1. "
+		}
+	],
+	"default_parameter_values": {
+		"svm_type": 0,
+		"kernel_type": 0,
+		"cache_size": 20000,
+		"stopping_criteria": 0.001,
+		"c_margin": 100,
+		"probability": 1,
+		"gamma": 0.5,
+		"shrinking": 1,
+		"coeff": 1,
+		"degree": 3,
+		"m_nu": 0.5,
+		"weight": [
+			1.0,
+			1.0
+		]
+	}
+}

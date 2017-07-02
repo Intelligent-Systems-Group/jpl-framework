@@ -1,0 +1,45 @@
+{
+	"name": "MultilabelClassificationPercentageSplitEvaluation",
+	"parameter": [
+		{
+			"name": "num_of_iterations",
+			"range": "{1,...,10}",
+			"description": "Number of shuffled split pairs of testing and training dataset to be formed for a particular percentage."
+		},
+		{
+			"name": "evaluation_metrics",
+			"range": "JsonArray",
+			"description": "List of metrics on which the evaluation has to be done with parameter json object containing parameters to be used for the metric."
+		},
+		{
+			"name": "percentage",
+			"range": "]0,1[",
+			"description": "Percentage of the splitting the dataset in training and testing dataset. Number of training instances = percentage*numberOfInstances"
+		}
+	],
+	"default_parameter_values": {
+		"evaluation_name": "percentage_split",
+		"num_of_iterations": 3,
+		"percentage": 0.70,
+		"evaluation_metrics": [
+			{
+				"name": "hamming_loss",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "macro_label_based_f_measure", 
+				"parameters": {
+					"beta": 1.0
+				}
+			}, 
+			{
+				"name": "subset_01_loss",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

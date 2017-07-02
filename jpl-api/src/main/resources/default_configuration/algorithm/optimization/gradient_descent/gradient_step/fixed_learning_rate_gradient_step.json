@@ -1,0 +1,16 @@
+{
+	"name" : "Fixed Learning Rate Gradient Step",
+  
+  	"title" : "Stochastic gradient descent tricks",
+  	"author" : "Bottou, L{\'e}on",
+  	"chapter" : "Neural Networks: Tricks of the Trade",
+  	"pages" : "421-436",
+  	"year" : "2012",
+  	"publisher" : "Springer",
+  	
+	"parameter" : [
+  	],
+  	
+ 	"default_parameter_values" : {
+  	} 
+}

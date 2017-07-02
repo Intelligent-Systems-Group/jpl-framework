@@ -1,0 +1,14 @@
+{
+	"name": "Kemeny Young",
+	"title": "Improved Bounds for Computing Kemeny Rankings",
+	"author": "Conitzer, Vincent and Davenport, Andrew and Kalagnanam, Jayant",
+	"year": "2006",
+	"summary": "The classical ekemny young approach solved by computing a pair wise score matrix and get the ranking out of all permutations with the highest score, as it is np hard, the ILP is used to get optimal solcution under some problem constraints",
+	"pages": "620-626",
+	"volume": "6",
+	"booktitle": "AAAI",
+	"parameter": [],
+	"default_parameter_values": {
+		
+	}
+}

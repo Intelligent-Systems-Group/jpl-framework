@@ -1,0 +1,50 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/multilabelclassification/emotions/emotions-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "mlc_output.txt",
+	"learning_problem": "multilabel_classification",
+	"seed": 12354657,
+	"algorithms": [
+		{
+			"name": "classifier_chains",
+			"parameters": {
+				"base_learner": {
+					"name": "logistic_classification",
+					"parameters": {
+					}
+				}
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "cross_validation",
+		"folds": 5,
+		"evaluation_metrics": [
+			{
+				"name": "accuracy",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "hamming_loss",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "macro_label_based_f_measure", 
+				"parameters": {
+					"beta": -1.0
+				}
+			}
+			
+		]
+	}
+}

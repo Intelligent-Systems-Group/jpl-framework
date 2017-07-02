@@ -1,0 +1,50 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/rankaggregation/netflix1-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/rankaggregation/ED-00006-00000004-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "rank_aggregation",
+	"algorithms": [
+		{
+			"name": "borda_count",
+			"parameters": {
+				
+			}
+		},
+		{
+			"name": "kemeny_young",
+			"parameters": {
+				
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "supplied_testset",
+		"threshold": "0.5",
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,46 @@
+{
+  "name" : "Matrix Factorization",
+  
+  "title" : "Matrix Factorization and Neighbor Based Algorithms for the Netflix Prize Problem",
+  "author" : "Gabor Takacs et al",
+  "pages" : " 267-274 ",
+  "year" : "2008",
+  "publisher" : "Proceedings of the 2008 ACM conference on Recommender systems",
+  
+  "parameter" : [
+    {
+      "name" : "k",
+      "range" : "Integer>0",
+      "description" : "The number of hidden features."
+    },{
+      "name" : "step_size",
+      "range" : "Double>0",
+      "description" : "The step size for the gradient descent."
+    },{
+      "name" : "reg_factor",
+      "range" : "Double>0",
+      "description" : "The regularization factor used when computing the gradient."
+    },{
+      "name" : "epsilon",
+      "range" : "Double",
+      "description" : "The minimal double value which is considered a valid rating."
+    },{
+      "name" : "r",
+      "range" : "Long",
+      "description" : "The seed for the random number generator used internally."
+    }, {
+      "name" : "n_max", 
+      "range" : "Integer>1", 
+      "descripton" : "The maximal number of iterations of gradient descent is n_max times the number of instances in the dataset." 
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"k" : 10, 
+	"step_size" : 0.001,
+	"reg_factor" : 0.002,
+	"epsilon" : 0.1, 
+	"r" : 1234,
+	"n_max" : 50
+  } 
+}

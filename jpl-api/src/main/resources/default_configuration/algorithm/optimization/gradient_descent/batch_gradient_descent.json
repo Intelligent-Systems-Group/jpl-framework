@@ -1,0 +1,43 @@
+{
+	"name" : "Batch Gradient Descent",
+	
+  	"title" : "Learning from Data",
+  	"author" : "Abu-Mostafa, Yaser S and Magdon-Ismail, Malik and Lin, Hsuan-Tien",
+  	"chapter" : "4",
+  	"pages" : "??",
+  	"year" : "2012",
+  	"publisher" : "AMLBook Singapore",
+  	
+	"parameter" : [
+    	{
+	   		"name": "gradient_step", 
+	   		"range": "JsonObject",
+	   		"description": "A json object defining the stochastic gradient step approach, which should be used to update the parameter vector. The definition consists of an identifier, identifying the according approach and a json object defining the parameters of the approach, if there are any. For an example definition, take a look at the default configuration file for adam."
+    	},
+    	{
+	      	"name" : "learning_rate",
+	      	"range": "Double",
+	      	"description": "The learning rate to use for the parameter vector update."
+    	},
+    	{
+	      	"name" : "iterations_dataset_size_multiplier",
+	      	"range": "Integer+",
+	      	"description": "This parameter is used as a stopping criterion. The dataset size multiplied with this parameter is used as an upper bound on the amount of iterations of this algorithm."
+    	},
+    	{
+	      	"name" : "minimal_weight_change",
+	      	"range": "Double",
+	      	"description": "This parameter is used as a stopping criterion. If the current norm of the difference between the weight vector in this iteration and the weight vector of the last iteration is less than this value, the algorithm stops."
+    	}
+  	],
+ 	"default_parameter_values" : {
+		"gradient_step": {
+			"identifier": "fixed_learning_rate",
+			"parameters": {
+			}
+		},
+		"learning_rate": 0.01, 
+		"iterations_dataset_size_multiplier": 100000, 
+		"minimal_weight_change": 0.00000001
+  	} 
+}

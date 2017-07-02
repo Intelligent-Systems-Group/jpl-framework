@@ -1,0 +1,13 @@
+{
+  "name": "Bernoulli Distribution",
+  "parameter" : [
+    {
+      "name" : "p",
+      "range": "]0,1[",
+      "description": "The mean of the distribution."
+    }
+  ],
+  "default_parameter_values" : {
+	"p" : 0.6
+  }
+}

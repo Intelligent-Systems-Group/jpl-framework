@@ -1,0 +1,11 @@
+{
+	"name": "spearman_correlation",
+	"author": "C. Spearman",
+	"year": 1904,
+	"title": "The proof and measurement of association between two things",
+	"summary": "The spearman's rank correlation is the sum of squared rank distances and is normalized to the interval [−1, +1].",
+	"parameter": [],
+	"default_parameter_values": {
+		
+	}
+}

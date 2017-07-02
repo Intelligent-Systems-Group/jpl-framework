@@ -1,0 +1,18 @@
+{
+  "name": "Beta Distribution",
+  "parameter" : [
+    {
+      "name" : "alpha",
+      "range": "Double>0",
+      "description": "The first shape parameter."
+    },{
+      "name" : "beta",
+      "range": "Double>0",
+      "description": "The second shape parameter."
+    }
+  ],
+  "default_parameter_values" : {
+	"alpha" : 10,
+	"beta" : 0.6
+  }
+}

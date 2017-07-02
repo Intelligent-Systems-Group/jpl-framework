@@ -1,0 +1,8 @@
+[
+	{
+		"name" : "perceptron_rank", 
+		"parameters" : {
+			"k" : -4
+		}
+	}
+]

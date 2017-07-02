@@ -1,0 +1,79 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-0-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-1-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-2-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-3-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-4-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-5-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-6-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-7-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-8-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/train/train_automobile-9-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "olc_output_use_training_dataset.txt",
+	"learning_problem": "ordinal_classification",
+	"algorithms": [
+		{
+			"name": "simple_ordinal_classification",
+			"parameters": {
+			}
+		},{
+			"name": "ordinal_classification_reduction_framework",
+			"parameters": {
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "use_training_dataset",
+		"evaluation_metrics": [
+			{
+				"name": "mean_squared_error",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

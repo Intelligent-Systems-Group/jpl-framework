@@ -1,0 +1,20 @@
+{
+  "name": "Borda Count",
+
+  "title" : "Models for Metasearch",
+  "author" : "Aslam, J. A., & Montague, M. ",
+  "year" : "2001",
+  "summary": "\\\"The Borda Count works as follows. Each voter ranks a fixed set of c candidates in order of preference. For each voter, the top ranked candidate is given c points, the second ranked candidate is given c−1 points, and so on. If there are some candidates left unranked by the voter, the remaining points are divided evenly among the unranked candidates. The candidates are ranked in order of total points, and the candidate with the most points wins the election.\\\" (Aslam, J. A., & Montague, M. , 2001, p. 3)",
+  
+  "parameter" : [
+  		{
+			"name": "is_rating_with_missed_labels",
+			"range": "Boolean",
+			"description": "Handles whether the Borda Count Algorithm for partial rankings should add the average score of missed labels for each not occurred label."
+		}
+  ],
+  
+  "default_parameter_values" : {
+  	"is_rating_with_missed_labels": true
+  }
+}

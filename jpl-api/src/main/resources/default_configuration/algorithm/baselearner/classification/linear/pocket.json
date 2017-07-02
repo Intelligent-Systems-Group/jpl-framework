@@ -1,0 +1,27 @@
+{
+  "name" : "Pocket Learning Algorithm",
+  
+  "title" : "Perceptron-based learning algorithms",
+  "author" : "Gallant, Stephen I",
+  "chapter" : "IEEE Transactions on neural networks",
+  "pages" : "179--191",
+  "year" : "1990",
+  "publisher" : "IEEE",
+  
+  "parameter" : [
+    {
+      "name" : "learning_rate",
+      "range" : "Double>0",
+      "description" : "The learning rate for the learning model."
+    },{
+      "name" : "number_of_iterations",
+      "range" : "Integer>=1",
+      "description" : "The number of iterations the pocket algorithm will perform."
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"learning_rate" : 0.1,
+	"number_of_iterations" : 40
+  } 
+}

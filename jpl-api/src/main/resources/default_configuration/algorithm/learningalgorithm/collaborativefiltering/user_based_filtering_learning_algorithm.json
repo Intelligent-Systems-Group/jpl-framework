@@ -1,0 +1,34 @@
+{
+  "name" : "User Based Filtering",
+  
+  "title" : "Recommender Systems",
+  "author" : "Prem Melville  & Vikas Sindhwani ",
+  "pages" : "829-838",
+  "year" : "2010",
+  "publisher" : "C. Sammut, G. Webb (eds.), Encyclopedia of Machine Learning © Springer-Verlag Berlin Heidelberg",
+  
+  "parameter" : [
+    {
+      "name" : "k",
+      "range" : "Integer>0",
+      "description" : "The number of neighbors which are querried to create the aggregate."
+    },
+    {
+      "name" : "min_double",
+      "range" : "Double",
+      "description" : "The minimal double value which is considered != 0 "
+    }, 
+        {
+      "name" : "correlation",
+      "range" : "{'pearson', 'cosine'}",
+      "description" : "The type of correlation function used for the algorithm. Possible values are 'cosine' and 'pearson'."
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"k" : 10, 
+	"min_double" : 0.5 , 
+	"correlation" : "cosine"
+	
+  } 
+}

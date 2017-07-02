@@ -1,0 +1,19 @@
+{
+  "name": "Plackett Luce Model",
+  "parameter" : [
+    {
+      "name" : "parameters",
+      "range": "Double Array",
+      "description": "The parameter values associated with the valid items given in the array below. This array has to have the same length as the parameters array. Note that the first parameter value in this array is associated with the first item in the array of valid items and so on. This means that both arrays need to have the same sorting."
+    }, 
+    {
+      "name" : "item_set",
+      "range": "Integer Array",
+      "description": "The set of valid items, given as an array. This array has to have the same length as the parameters array."
+    }
+  ],
+  "default_parameter_values" : {
+	"parameters" : [1],
+	"item_set" : [1]
+  }
+}

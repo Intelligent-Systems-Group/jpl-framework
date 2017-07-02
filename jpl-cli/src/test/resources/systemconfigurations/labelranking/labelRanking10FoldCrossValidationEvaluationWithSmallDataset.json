@@ -1,0 +1,85 @@
+{
+	"input_files": [
+		
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/iris_dense.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "label_ranking",
+	"algorithms": [
+		{
+			"name": "instance_based_label_ranking",
+			"parameters": {
+						"base_learner": {
+							"name": "k_nearest_neighbors",
+							"parameters": {
+								"k" : 10
+							}
+						},
+						"rank_aggregation_algorithm": {
+							"name": "plackett_luce",
+							"parameters": {
+				
+							}
+						}
+			}
+		},
+				{
+			"name": "instance_based_label_ranking",
+			"parameters": {
+						"base_learner": {
+							"name": "k_nearest_neighbors",
+							"parameters": {
+								"k" : 10
+							}
+						},
+						"rank_aggregation_algorithm": {
+							"name": "borda_count",
+							"parameters": {
+				
+							}
+						}
+			}
+		},
+				{
+			"name": "instance_based_label_ranking",
+			"parameters": {
+						"base_learner": {
+							"name": "k_nearest_neighbors",
+							"parameters": {
+								"k" : 10
+							}
+						},
+						"rank_aggregation_algorithm": {
+							"name": "kemeny_young",
+							"parameters": {
+				
+							}
+						}
+			}
+		}
+		
+	],
+	"evaluation": {
+		"evaluation_name": "cross_validation",
+		"folds": 10,
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

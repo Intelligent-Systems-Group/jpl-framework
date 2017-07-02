@@ -1,0 +1,39 @@
+{
+	"name": "MultilabelClassificationCrossValidationEvaluation",
+	"parameter": [
+		{
+			"name": "folds",
+			"range": "Integer>1",
+			"description": "Number of folds for K-fold cross validation. Value of 1 and if it is greater than number of instances in dataset signifies leave-one out cross validation."
+		},
+		{
+			"name": "evaluation_metrics",
+			"range": "JsonArray",
+			"description": "List of metrics on which the evaluation has to be done with parameter json object containing parameters to be used for the metric."
+		}
+	],
+	"default_parameter_values": {
+		"evaluation_name": "cross_validation",
+		"folds": 5,
+		"evaluation_metrics": [
+			{
+				"name": "hamming_loss",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "macro_label_based_f_measure", 
+				"parameters": {
+					"beta": 1.0
+				}
+			}, 
+			{
+				"name": "subset_01_loss",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

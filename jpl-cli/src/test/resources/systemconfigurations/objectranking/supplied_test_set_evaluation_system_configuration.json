@@ -1,0 +1,74 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-zip-b.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-zip-full.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "object_ranking",
+	"algorithms": [
+		{
+			"name": "expected_rank_regression",
+			"parameters": {
+				"base_learner": {
+					"name": "linear_regression",
+					"parameters": {
+						
+					}
+				}
+			}
+		},
+		{
+			"name": "expected_rank_regression",
+			"parameters": {
+				"base_learner": {
+					"name": "logistic_regression",
+					"parameters": {
+						
+					}
+				}
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "supplied_testset",
+		"supplied_test_set_with_dataset": [
+			{
+				"dataset_file_name": "sushi-dataset-zip-b.gprf",
+				"testset_file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-50-1.gprf"
+			},
+			{
+				"dataset_file_name": "sushi-dataset-zip-full.gprf",
+				"testset_file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-50-2.gprf"
+			}
+			,
+			{
+				"dataset_file_name": "sushi-dataset-zip-full.gprf",
+				"testset_file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-zip-a.gprf"
+			}
+		],
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

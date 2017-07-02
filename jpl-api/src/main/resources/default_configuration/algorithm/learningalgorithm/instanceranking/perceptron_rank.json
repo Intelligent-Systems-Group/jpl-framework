@@ -1,0 +1,19 @@
+{
+	"name": "PerceptronRank",
+	"title" : "Pranking with Ranking",
+	"author" : "Koby Crammer and Yoram Singer",
+	"chapter" : "",
+	"pages" : "641-647",
+	"year" : 2001,
+	"publisher" : "NIPS'01 Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic",
+    "parameter" : [
+   	 	{
+       		"name" : "k",
+       		"range": "Integer>0",
+       		"description": "Number of different categories for algorithm should divide."
+    	}
+    ],
+    "default_parameter_values" : {
+		"k" : "5"
+  	}
+}

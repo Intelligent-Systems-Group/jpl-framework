@@ -1,0 +1,21 @@
+{
+  "name": "PRank Algorithm",
+  "author": "...",
+  "year": 2001,
+  "title": "Pranking with Ranking",
+  "summary": "A online algorithm for instance ranking based on ...",
+  "parameter" : [
+    {
+      "name" : "k",
+      "range": "Integer",
+      "value": "5",
+      "description": "Number of different categories"
+    },
+    {
+      "name" : "t",
+      "range": "Integer",
+      "value": "20",
+      "description": "Number of iterations"
+    }
+  ]
+}

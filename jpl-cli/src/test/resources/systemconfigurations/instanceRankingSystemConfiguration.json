@@ -1,0 +1,49 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/instancemovielens.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "instance_ranking",
+	"algorithms": [
+		{
+			"name": "perceptron_ranking",
+			"parameters": {
+				
+			}
+		},
+		{
+			"name": "combined_ranking_and_regression",
+			"parameters": {
+				
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "supplied_testset",
+		"supplied_test_set_with_dataset": [
+			{
+				"dataset_file_name": "instancemovielens.gprf",
+				"testset_file_path": "src/test/resources/command/testdatasets/instancemovielens.gprf"
+			}
+		],
+		"evaluation_metrics": [
+			{
+				"name": "mean_squared_error",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "mean_absolute_error",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

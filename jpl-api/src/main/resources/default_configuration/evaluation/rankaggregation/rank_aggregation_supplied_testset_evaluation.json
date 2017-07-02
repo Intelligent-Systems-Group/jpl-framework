@@ -1,0 +1,33 @@
+{
+	"name": "RankAggregationSuppliedTestSetEvaluation",
+	"parameter": [
+		{
+			"name": "evaluation_metrics",
+			"range": "JsonArray",
+			"description": "List of metrics on which the evaluation has to be done with parameter json object containing parameters to be used for the metric."
+		},
+		{
+			"name": "supplied_test_set_with_dataset",
+			"range": "JsonArray",
+			"description": "List of pairs of training dataset file name and the testing dataset file path on which the algorithms have to be tested."
+		}
+	],
+	"default_parameter_values": {
+		"evaluation_name": "supplied_testset",
+		"supplied_test_set_with_dataset": [],
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

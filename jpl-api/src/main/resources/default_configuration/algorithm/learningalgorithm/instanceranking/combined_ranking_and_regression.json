@@ -1,0 +1,37 @@
+{
+	"name": "Combined Ranking and Regression",
+	"title" : "Combined Ranking and Regression",
+	"author" : "Donald Sculley",
+	"chapter" : "",
+	"pages" : "979-988",
+	"year" : "2010",
+	"publisher" : "Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining",
+  	"parameter" : [
+    {
+      "name" : "loss_function_identifier",
+      "range": "{'squared', 'logistic'}",
+      "description": "Decide if you want to use a 'squared' or 'logistic' loss function."
+    },
+    {
+      "name" : "alpha",
+      "range": "Double of [0,1]",
+      "description": "The given tradeoff factor."
+    },
+    {
+      "name" : "lambda",
+      "range": "Double!=0",
+      "description": "The regularization factor used when the gradient is computed."
+    },
+    {
+      "name" : "iterations",
+      "range": "Integer>0",
+      "description": "The number of iterations the algorithm is used."
+    }
+  ],
+  "default_parameter_values" : {
+	"loss_function_identifier" : "squared",
+	"alpha" : 0.5,
+	"lambda" : 0.20,
+	"iterations" : 10000
+  }
+}

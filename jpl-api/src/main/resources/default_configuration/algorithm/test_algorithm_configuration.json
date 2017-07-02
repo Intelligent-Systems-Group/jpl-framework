@@ -1,0 +1,24 @@
+{
+  "name": "Test Algorithm",
+  "author": "...",
+  "year": 1111,
+  "title": "Test",
+  "summary": "For testing onl",
+  "parameter" : [
+    {
+      "name" : "t",
+      "range": "Integer",
+      "description": "test"
+    },
+    {
+      "name" : "p",
+      "range": "Integer",
+      "description": "test2"
+    }
+  ],
+  "default_parameter_values" : {
+	"t" : "5",
+	"p" : "3", 
+	"gradientStepIdentifier" : "hallo"
+  }
+}

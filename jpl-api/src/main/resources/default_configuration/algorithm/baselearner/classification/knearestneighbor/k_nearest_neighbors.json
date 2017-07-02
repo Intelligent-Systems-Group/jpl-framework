@@ -1,0 +1,19 @@
+{
+  "name" : "k_nearest_neighbors",
+  "title" : "An Algorithm for Finding Best Matches in Logarithmic Expected Time",
+  "author" : "Friedman et al",
+  "year" : "1977",
+  "publisher" : "ACM Transactions on Mathematical Software",
+  
+  "parameter" : [
+    {
+      "name" : "k",
+      "range" : "Integer>0",
+      "description" : "The number of neighbors who vote on the classification."
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"k" : 3
+  } 
+}

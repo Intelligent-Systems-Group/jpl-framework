@@ -1,0 +1,12 @@
+{
+  "input_files":[
+    {
+      "description" : "",
+      "file_path":"src/test/resources/command/testdatasets/netflix1-soc.gprf"
+    }
+  ],
+  "output_file":"",
+  "learning_problem":"",
+  "algorithms":[],
+  "evaluation":{}
+}

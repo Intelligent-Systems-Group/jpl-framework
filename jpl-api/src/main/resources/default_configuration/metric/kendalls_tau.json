@@ -1,0 +1,10 @@
+{
+	"name": "kendalls_tau",
+	"author": "Cheng, W., Rademaker, M., De Baets, B., & Hüllermeier, E.",
+	"year": 2010,
+	"title": "Predicting partial orders: ranking with abstention.",
+	"summary": "Counts the number of label pairs that are incorrectly ordered and normalizes this number to the interval [−1, +1].",
+	"parameter": [],
+	"default_parameter_values": {
+	}
+}

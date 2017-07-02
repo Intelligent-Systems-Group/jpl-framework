@@ -1,0 +1,32 @@
+{
+  "name": "Label Ranking by Pairwise Comparison",
+
+  "title" : "Preference learning and ranking by pairwise comparison",
+  "author" : "Fürnkranz, J., & Hüllermeier, E.",
+  "year" : "2010",
+  "summary": "The label ranking is done by decomposing the label ranking problem into regression models for each label pair combination. During the prediction for a new instance each model is queried and the output of the models is aggregated to a ranking according to the label score.",
+  
+  "parameter" : [
+  		{
+			"name": "base_learner",
+			"range": "JsonObject",
+			"description": "Provides the enum identifier for the base learner algorithm (logistic_regression) with the base learner parameters."
+		}
+  ],
+  
+  "default_parameter_values" : {
+ 		"base_learner": {
+			"name": "logistic_classification",
+			"parameters": {
+				"base_learner": {
+					"name": "logistic_regression",
+					"parameters": {
+						"learning_rate" : 0.01,
+						"gradient_step_identifier" : "adam", 
+						"gradient_descent_identifier" : "stochastic_gradient_descent" 
+					}
+				}	
+			}
+		}
+  }
+}

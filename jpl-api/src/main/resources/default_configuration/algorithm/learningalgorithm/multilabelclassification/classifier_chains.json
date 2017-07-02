@@ -1,0 +1,33 @@
+{
+  "name" : "Classifier Chains",
+  
+  "title" : "Classifier chains for multi-label classification",
+  "author" : "Read, Jesse and Pfahringer, Bernhard and Holmes, Geoff and Frank, Eibe",
+  "chapter" : "85",
+  "pages" : "333-359",
+  "year" : "2011",
+  "publisher" : "Springer",
+  
+  "parameter": [
+		{
+			"name": "base_learner",
+			"range": "JsonObject",
+   			"description": "A json object defining the base learner to use. The definition consists of an identifier, identifying the according base learner and a json object defining the parameters of the base learner, if there are any."
+		},
+		{
+			"name": "permutation",
+			"range": "JsonArray",
+   			"description": "This defines the permutation on the labels, which should be used by the algorithm. If you have 5 labels, the permutation should contain numbers from 0 to 4 in any order you like, e.g.: [4,3,2,0,1]. If it is left empty, the labels are used in the order they are defined in the dataset file. Note that this parameter has to be set specifically for each dataset, unless the datasets have the same number of labels."
+		}
+	],
+	"default_parameter_values": {
+		"base_learner": {
+			"name": "logistic_classification",
+				"parameters": {
+					"threshold": 0.5,
+					"learning_rate" : 0.1
+				}
+		},
+		"permutation": []
+	} 
+}

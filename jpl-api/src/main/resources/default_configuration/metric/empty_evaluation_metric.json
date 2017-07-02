@@ -1,0 +1,13 @@
+{
+  "name":"EmptyEvaluationMetric",
+  "author":"Sebastian Gottschalk",
+  "year":0,
+  "title":"No paper",
+  "summary":"This JSON file is used for metrices that need no configuration file.",
+  "parameter":[
+    
+  ],
+  "default_parameter_values":{
+     
+  }
+}

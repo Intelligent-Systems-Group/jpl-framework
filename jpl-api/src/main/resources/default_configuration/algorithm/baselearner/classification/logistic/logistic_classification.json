@@ -1,0 +1,32 @@
+{
+  "name" : "LogisticClassification",
+  
+  "title" : "Title",
+  "author" : "Author",
+  "chapter" : "Chapter",
+  "pages" : "Pages",
+  "year" : "year",
+  "publisher" : "Publisher",
+  
+  "parameter" : [
+    {
+      "name" : "threshold",
+      "range" : "]0,1[",
+      "description" : "This parameter defines the threshold such that if the underlying logistic regression predicts a probability smaller or equal this value, -1 is returned and +1 otherwise."
+    },{
+		"name": "base_learner",
+		"range": "JsonObject",
+		"description": "A json object defining the base learner to use. The definition consists of an identifier, identifying the according base learner and a json object defining the parameters of the base learner, if there are any."
+	}
+  ],
+  
+  "default_parameter_values" : {
+	"threshold" : 0.5,
+	"base_learner": {
+		"name": "logistic_regression",
+		"parameters": {
+			"learning_rate" : 0.01
+		}
+	}
+  } 
+}

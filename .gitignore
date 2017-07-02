@@ -1,0 +1,16 @@
+**/target/
+
+### Log files ###
+*.log
+
+### Eclipse (including Maven help files) ###
+*.classpath
+*.project
+*.settings
+
+### IntelliJ (including Maven help files)
+*.iml
+*.idea
+
+### MAC ###
+*.DS_Store

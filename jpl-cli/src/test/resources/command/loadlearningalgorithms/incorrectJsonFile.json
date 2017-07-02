@@ -1,0 +1,12 @@
+[
+		"name": "prank_algorithm", 
+		"parameters": {
+			"a": 1
+		}
+	},{
+		"name": "prank_algorithm",
+    	"parameters": {
+    		"a": 2
+    	}
+    }
+]

@@ -1,0 +1,18 @@
+{
+  "name": "Binomial Distribution",
+  "parameter" : [
+    {
+      "name" : "n",
+      "range": "Integer>=0",
+      "description": "The number of trials."
+    },{
+      "name" : "p",
+      "range": "]0,1[",
+      "description": "The success probability in each trial."
+    }
+  ],
+  "default_parameter_values" : {
+	"n" : 10,
+	"p" : 0.6
+  }
+}

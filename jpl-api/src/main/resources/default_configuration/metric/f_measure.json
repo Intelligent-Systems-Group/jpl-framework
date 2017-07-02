@@ -1,0 +1,16 @@
+{
+	"name": "f_measure",
+	"author": "Zhang, Min-Ling and Zhou, Zhi-Hua",
+	"year": 2014,
+	"title": "A review on multi-label learning algorithms",
+	"parameter": [
+		{
+	   		"name": "beta", 
+	   		"range": "Double",
+	   		"description": "This parameter determines the importance of the precision. If the parameter is set 1, the f-measure is the harmonic mean of precision and recall. Values below 1 put more weight on precision whereas value above 1 put more weight on recall."
+		}
+	],
+	"default_parameter_values": {
+		"beta": 1.0
+	}
+}

@@ -1,0 +1,56 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-50-1.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/objectranking/sushi-dataset-50-2.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "object_ranking",
+	"algorithms": [
+		{
+			"name": "expected_rank_regression",
+			"parameters": {
+				
+			}
+		},
+		{
+			"name": "pairwise_ranking",
+			"parameters": {
+				"method_type": "svor"
+			}
+		},
+		{
+			"name": "pairwise_ranking",
+			"parameters": {
+				"method_type": "order-svm"
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "cross_validation",
+		"folds": 3,
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"name" : "Adam Gradient Step",
+  
+  	"title" : "Adam: A method for stochastic optimization",
+  	"author" : "Kingma, Diederik and Ba, Jimmy",
+  	"chapter" : "arXiv preprint arXiv:1412.6980",
+  	"pages" : "??",
+  	"year" : "2014",
+  	"publisher" : "arXiv",
+  	
+	"parameter" : [
+		{
+	      	"name" : "beta1",
+	      	"range": "]0,1[",
+	      	"description": "This parameter is the exponential decay rate for the first moment used for the weight vector update in the gradient step procedure."
+    	},
+    	{
+	      	"name" : "beta2",
+	      	"range": "]0,1[",
+	      	"description": "This parameter is the exponential decay rate for the second moment used for the weight vector update in the gradient step procedure."
+    	},
+    	{
+	      	"name" : "epsilon",
+	      	"range": "]0,1[",
+	      	"description": "This parameter is a very small number ensuring that no division by zero is happening during the weight vector update."
+    	}
+  	],
+ 	"default_parameter_values" : {
+		"beta1": 0.9,
+		"beta2": 0.999,
+		"epsilon": 10e-8
+  	} 
+}

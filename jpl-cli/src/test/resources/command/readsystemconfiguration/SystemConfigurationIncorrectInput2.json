@@ -1,0 +1,16 @@
+{
+  "input_files":[
+    {
+      "description":"",
+      "file_path":"src/test/resources/command/testdatasets/netflix1-soc.gprf"
+    },
+    {
+      "description":"",
+      "file_path":"src/test/resources/command/testdatasets/ED-00006-00000004-soc.gprf"
+    }
+  ],
+  "output_file":"output.txt",
+  "learning_problem":"1 inccorect_value",
+  "algorithms":[],
+  "evaluation":{}
+}

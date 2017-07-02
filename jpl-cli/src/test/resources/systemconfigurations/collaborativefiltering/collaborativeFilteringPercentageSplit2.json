@@ -1,0 +1,44 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/movielens.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "collaborative_filtering",
+	"algorithms": [
+		{
+			"name": "user_based_filtering",
+			"parameters": {
+				"k": 12,
+				"correlation":"cosine"
+			}
+		},{
+			"name": "user_based_filtering",
+			"parameters": {
+				"k": 25,
+				"correlation":"cosine"
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "percentage_split",
+		"num_of_iterations": 1,
+		"percentage": 0.90,
+		"evaluation_metrics": [
+			{
+				"name": "mean_squared_error",
+				"parameters": {		
+				}
+			},
+			{
+				"name": "mean_absolute_error",
+				"parameters": {
+				}
+			}
+		]
+	}
+}

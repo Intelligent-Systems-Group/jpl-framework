@@ -1,0 +1,60 @@
+{
+	"name" : "Stochastic Gradient Descent",
+  
+  	"title" : "Stochastic gradient descent tricks",
+  	"author" : "Bottou, L{\'e}on",
+  	"chapter" : "Neural Networks: Tricks of the Trade",
+  	"pages" : "421-436",
+  	"year" : "2012",
+  	"publisher" : "Springer",
+  	
+	"parameter" : [
+		{
+	   		"name": "gradient_step", 
+	   		"range": "JsonObject",
+	   		"description": "A json object defining the stochastic gradient step approach, which should be used to update the parameter vector. The definition consists of an identifier, identifying the according approach and a json object defining the parameters of the approach, if there are any. For an example definition, take a look at the default configuration file for adam."
+    	},
+    	{
+	      	"name" : "learning_rate",
+	      	"range": "Double",
+	      	"description": "The learning rate to use for the parameter vector update."
+    	},
+    	{
+	      	"name" : "maximum_number_of_improvement_checks_since_last_improvement",
+	      	"range": "Integer+",
+	      	"description": "This parameter is used as a stopping criterion. It determines the amount of checks since the last improvement without finding a new improvement for which the algorithm should stop. This improvement check is based on a validation dataset, which is separated from the original data before starting."
+    	},
+    	{
+	      	"name" : "iterations_dataset_size_multiplier",
+	      	"range": "Integer+",
+	      	"description": "This parameter is used as a stopping criterion. The dataset size multiplied with this parameter is used as an upper bound on the amount of iterations of this algorithm."
+    	},
+    	{
+	      	"name" : "validation_set_size_in_percentage",
+	      	"range": "[0,1]",
+	      	"description": "This parameter determines the validation dataset size in percentage. The validation dataset is used to determine the improvement of the result of the algorithm over time by computing the cross entropy error on the validation set."
+    	},
+    	{
+	      	"name" : "validation_error_check_time_multiplier",
+	      	"range": "Integer+",
+	      	"description": "This parameter can be used to control how often the improvement is checked based on the validation dataset. The check is performed every iteration % validationDataset.size() * parameter iterations. This means that the higher the value for this parameter is, the less often the validation error is checked and the faster the algorithm runs."
+    	}
+  	],
+  
+ 	"default_parameter_values" : {
+		"gradient_step": {
+			"identifier": "adam",
+			"parameters": {
+			}
+		},
+		"learning_rate": 0.01,
+		"maximum_number_of_improvement_checks_since_last_improvement": 120,
+		"iterations_dataset_size_multiplier": 50,
+		"validation_set_size_in_percentage": 0.05,
+		"validation_error_check_time_multiplier": 20
+  	} 
+
+
+
+	
+}

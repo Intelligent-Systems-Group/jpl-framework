@@ -1,0 +1,36 @@
+{
+  "name": "Instance Based Label Ranking",
+  "title" : "Label ranking methods based on the Plackett-Luce model",
+  "author" : "Weiwei Cheng, Krzysztof Dembczyński, Eyke Hüllermeier",
+  "year" : "2010",
+  "summary": "The instance-based label ranking algorithm computes the k nearest neighbors of a new query instance in the training dataset. The rankings of this neighbors are aggregated with a rank aggregation algorithm, for example with the Plackett-Luce ranking model. The output of the rank aggregation is the prediction of the query instance.",
+  
+	"parameter": [
+		{
+			"name": "base_learner",
+			"range": "JsonObject",
+			"description": "Provides the enum identifier for the base learner algorithm (k_nearest_neighboour) with the base learner parameters."
+		},
+		{
+			"name": "rank_aggregation_algorithm",
+			"range": "JsonObject",
+			"description": "Provide the enum identifier for the rank aggregation algorithm with the learner parameters."
+		}
+	],
+	"default_parameter_values": {
+		"base_learner": {
+			"name": "k_nearest_neighbors",
+			"parameters": {
+				"k" : 10
+			}
+		},
+		"rank_aggregation_algorithm": {
+			"name": "plackett_luce",
+			"parameters": {
+				"max_iterations": "1000",
+				"norm_tolerance": "0.000000001",
+				"log_likelihood_tolerance": "0.00001"
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+{
+  "name" : "Perceptron Learning Algorithm",
+  
+  "title" : "The perceptron, a perceiving and recognizing automaton Project Para",
+  "author" : "Rosenblatt, Frank",
+  "chapter" : "",
+  "pages" : "",
+  "year" : "1957",
+  "publisher" : "Cornell Aeronautical Laboratory",
+  
+  "parameter" : [
+    {
+      "name" : "learning_rate",
+      "range" : "Double>0",
+      "description" : "The learning rate for the learning model."
+    },{
+      "name" : "number_of_iterations",
+      "range" : "Integer>=1",
+      "description" : "The number of iterations the perceptron algorithm will perform."
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"learning_rate" : 0.1,
+	"number_of_iterations" : 40
+  } 
+}

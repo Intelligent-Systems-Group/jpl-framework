@@ -1,0 +1,41 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/rankaggregation/netflix1-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/rankaggregation/ED-00006-00000004-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "rank_aggregation",
+	"algorithms": [
+		{
+			"name": "binary_relevance_learning",
+			"parameters": {
+				
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "use_training_dataset",
+		"evaluation_metrics": [
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+				}
+			},
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"name": "Simple Ordinal Classification",
+
+	"title" : "A simple approach to ordinal classification",
+	"author" : "Frank, Eibe and Hall, Mark",
+	"chapter" : "European Conference on Machine Learning",
+	"pages" : "145--156",
+	"year" : "2001",
+	"publisher" : "Springer",
+  
+	"parameter" : [
+		{
+			"name": "base_learner",
+			"range": "JsonObject",
+			"description": "A json object defining the base learner to use. The definition consists of an identifier, identifying the according base learner and a json object defining the parameters of the base learner, if there are any."
+		}
+	],
+  
+	"default_parameter_values" : {
+		"base_learner": {
+			"name": "logistic_regression",
+			"parameters": {
+				"learning_rate" : 0.01
+			}
+		}
+	} 
+}

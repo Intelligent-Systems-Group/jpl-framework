@@ -1,0 +1,31 @@
+{
+	"name": "Plackett-Luce",
+	"title" : "MM algorithms for generalized Bradley-Terry models",
+	"author" : "Hunter, D. R.",
+	"year" : "2004",
+	"summary": "The Minorization Maximization algorithm for the Plackett-Luce model.",
+	"parameter" : [
+		{
+			"name": "max_iterations",
+			"range": "Integer>0",
+			"description": "Provides the maximum number of iterations for the Minorization Maximazation algorithm."
+		},
+		{
+			"name": "norm_tolerance",
+			"range": "Double>0",
+			"description": "The tolerance between the norm of the difference between the new and the older gamma in the Minorization Maximazation iteration."
+		},
+		{
+			"name": "log_likelihood_tolerance",
+			"range": "Double>0",
+			"description": "The tolerance between the last and the new Log-Likelihood in the Minorization Maximazation algorithm."
+		}
+		
+	],
+  
+	"default_parameter_values" : {
+		"max_iterations": "1000",
+		"norm_tolerance": "0.000000001",
+		"log_likelihood_tolerance": "0.00001"
+	} 
+}

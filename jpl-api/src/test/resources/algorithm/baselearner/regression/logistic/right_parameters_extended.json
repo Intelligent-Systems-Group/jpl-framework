@@ -1,0 +1,21 @@
+{
+	"learning_rate" : 0.01,
+	"gradient_descent": {
+		"identifier": "stochastic_gradient_descent", 
+		"parameters": {
+			"gradient_step": {
+				"identifier": "adam",
+				"parameters": {
+					"beta1": 0.9,
+					"beta2": 0.999,
+					"epsilon": 10e-8
+				}
+			},
+			"learning_rate": 0.01,
+			"maximum_number_of_improvement_checks_since_last_improvement": 120,
+			"iterations_dataset_size_multiplier": 50,
+			"validation_set_size_in_percentage": 0.05,
+			"validation_error_check_time_multiplier": 20
+		}
+	}
+}

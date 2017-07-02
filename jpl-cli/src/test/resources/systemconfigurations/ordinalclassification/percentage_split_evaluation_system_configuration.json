@@ -1,0 +1,34 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "../jpl-api/src/test/resources/algorithm/learningalgorithm/ordinalclassification/automobile/test/test_automobile-0-arff.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "olc_outputpercentage_split.txt",
+	"learning_problem": "ordinal_classification",
+	"algorithms": [
+		{
+			"name": "simple_ordinal_classification",
+			"parameters": {
+			}
+		},{
+			"name": "ordinal_classification_reduction_framework",
+			"parameters": {
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "percentage_split",
+		"evaluation_metrics": [
+			{
+				"name": "mean_squared_error",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

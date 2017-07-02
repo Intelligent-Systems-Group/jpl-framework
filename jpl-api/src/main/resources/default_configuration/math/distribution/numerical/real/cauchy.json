@@ -1,0 +1,18 @@
+{
+  "name": "Cauchy Distribution",
+  "parameter" : [
+    {
+      "name" : "mu",
+      "range": "Double",
+      "description": "The location parameter."
+    },{
+      "name" : "lambda",
+      "range": "Double>0",
+      "description": "The shape parameter."
+    }
+  ],
+  "default_parameter_values" : {
+	"mu" : 0,
+	"lambda" : 0.5
+  }
+}

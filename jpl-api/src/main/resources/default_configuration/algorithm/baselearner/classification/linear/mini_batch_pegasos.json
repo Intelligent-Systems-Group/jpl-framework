@@ -1,0 +1,37 @@
+{
+  "name": "Mini Batch Pegasos Learning Algorithm",
+
+  "title" : "Pegasos: Primal estimated sub-gradient solver for svm",
+  "author" : "Shalev-Shwartz, Shai and Singer, Yoram and Srebro, Nathan and Cotter, Andrew",
+  "chapter" : "",
+  "pages" : "3--30",
+  "year" : "2011",
+  "publisher" : "Springer",
+  
+  "parameter" : [
+    {
+      "name" : "learning_rate",
+      "range" : "Double>0",
+      "description" : "The learning rate for the learning model."
+    },{
+      "name" : "number_of_iterations",
+      "range" : "Integer>=1",
+      "description" : "The number of iterations this algorithm will perform."
+    },{
+      "name" : "subset_size",
+      "range" : "Integer>=1",
+      "description" : "The size of the subset of instances used in every iteration to update the weigth vector."
+    },{
+      "name" : "regularization_parameter",
+      "range" : "Double>0",
+      "description" : "The regularization parameter used to compute the step size and update the weights.."
+    }
+  ],
+  
+  "default_parameter_values" : {
+	"learning_rate" : 0.1,
+	"number_of_iterations" : 40,
+	"subset_size" : 3,
+	"regularization_parameter" : 0.01
+  }
+}

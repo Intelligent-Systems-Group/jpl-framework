@@ -1,0 +1,27 @@
+{
+	"name": "RankAggregationInSampleEvaluation",
+	"parameter": [
+		{
+			"name": "evaluation_metrics",
+			"range": "JsonArray",
+			"description": "List of metrics on which the evaluation has to be done with parameter json object containing parameters to be used for the metric."
+		}
+	],
+	"default_parameter_values": {
+		"evaluation_name": "use_training_dataset",
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/netflix1-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		},
+		{
+			"description": "",
+			"file_path": "src/test/resources/command/testdatasets/ED-00006-00000004-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "output.txt",
+	"learning_problem": "rank_aggregation",
+	"algorithms": [],
+	"evaluation": {
+		"evaluation_metrics": []
+	}
+}

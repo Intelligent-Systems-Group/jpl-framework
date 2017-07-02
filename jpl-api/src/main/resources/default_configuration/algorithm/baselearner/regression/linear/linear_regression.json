@@ -1,0 +1,16 @@
+{
+  "name": "Linear Regression",
+  "title": "Generalized QR Factorization and Its Application",
+  "author": "E. Anderson, Z. Bai and J. Dongarra",
+  "chapter" : "Linear Algebra and its applications",
+  "pages" : "162-164:243-247",
+  "year" : "1992",
+  "publisher" : "Elsevier",
+  
+  "parameter" : [
+    
+  ],
+  "default_parameter_values" : {
+	
+  }
+}

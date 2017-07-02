@@ -1,0 +1,18 @@
+{
+  "name": "Normal Distribution",
+  "parameter" : [
+    {
+      "name" : "mu",
+      "range": "Double",
+      "description": "The mean."
+    },{
+      "name" : "sigma",
+      "range": "Double>0",
+      "description": "The standard deviation."
+    }
+  ],
+  "default_parameter_values" : {
+	"mu" : 0,
+	"sigma" : 1.0
+  }
+}
