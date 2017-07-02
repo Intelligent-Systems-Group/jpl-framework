@@ -61,4 +61,4 @@ The current version of the jPL framework is: 0.0.9
 For more detailed information, please visit our [Confluence handbook](http://jpl-framework.cs.upb.de:8090/display/BAC/Introduction).
 
 ## License
-Currently the project is lincesed under **GPL v3.0**. 
+Currently the project is licensed under **GPL v3.0**. 
