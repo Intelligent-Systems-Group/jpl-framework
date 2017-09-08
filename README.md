@@ -1,4 +1,4 @@
-![](http://jpl-framework.cs.upb.de:8090/download/attachments/1998956/logo.png?version=1&modificationDate=1498990503774&api=v2)
+![](https://github.com/Intelligent-Systems-Group/jpl-framework/blob/master/logo.png)
 
 The jPL framework was originally created by a student project group under the supervision of the [Intelligent Systems Group](https://www-old.cs.uni-paderborn.de/fachgebiete/intelligente-systeme.html) at the [University of Paderborn](https://www.uni-paderborn.de/en/university/). The aim of this framework is to provide a generic framework to evaluate different algorithms in the context of preference learning. Preference learning is a subfield of machine learning, which deals with learning prediction models using preference information.
 Learning algorithms solving the following preference learning problems are implemented so far:
