@@ -1,0 +1,73 @@
+{
+	"input_files": [
+	{
+		"file_path": "percentage-split/datasets/iris_dense.gprf"
+	},
+	{
+		"file_path": "percentage-split/datasets/glass_dense.gprf"
+	}
+],
+	"output_file": "percentage-split/lr_output_percentage_split.txt",
+	"learning_problem": "label_ranking",
+	"algorithms": [
+			{
+			"name": "instance_based_label_ranking",
+			"parameters": {
+							"base_learner": {
+								"name": "k_nearest_neighbors",
+								"parameters": {
+									"k" : 10
+								}
+							},
+							"rank_aggregation_algorithm": {
+								"name": "borda_count",
+								"parameters": {
+									
+								}
+							}
+				}
+			},
+			{
+				"name": "label_ranking_pairwise_comparison",
+				"parameters": {
+					"base_learner": {
+						"name": "logistic_regression",
+						"parameters" : {
+							"learning_rate" : 0.0005,
+							"gradient_descent": {
+								"identifier": "stochastic_gradient_descent", 
+								"parameters": {
+									"gradient_step": {
+										"identifier": adam, 
+											"parameters": {
+												"beta1": 0.9,
+												"beta2": 0.999,
+												"epsilon": 10e-8
+											}
+										}
+									}
+								}
+						}
+					}
+				}
+			}
+	],
+	"evaluation": {
+		"evaluation_name": "percentage_split",
+		"percentage": 0.7,
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}

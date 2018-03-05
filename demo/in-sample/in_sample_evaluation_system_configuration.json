@@ -1,0 +1,43 @@
+{
+	"input_files": [
+		{
+			"description": "",
+			"file_path": "in-sample/datasets/netflix1-soc.gprf",
+			"selected_context_features": null,
+			"selected_item_features": null
+		}
+	],
+	"output_file": "in-sample/ra_output_in_sample.txt",
+	"learning_problem": "rank_aggregation",
+	"algorithms": [
+		{
+			"name": "borda_count",
+			"parameters": {
+				
+			}
+		},
+		{
+			"name": "kemeny_young",
+			"parameters": {
+				
+			}
+		}
+	],
+	"evaluation": {
+		"evaluation_name": "use_training_dataset",
+		"evaluation_metrics": [
+			{
+				"name": "spearman_correlation",
+				"parameters": {
+					
+				}
+			},
+			{
+				"name": "kendalls_tau",
+				"parameters": {
+					
+				}
+			}
+		]
+	}
+}
